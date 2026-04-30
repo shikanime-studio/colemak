@@ -49,7 +49,7 @@ The `modules/zed.nix` module includes:
 
 #### Neovim Implementation
 
-The `modules/neovim-colemak.nix` module includes:
+The `modules/neovim.nix` module includes:
 
 - NEUI cluster navigation for normal/visual modes
 - Restored `HJKL` command mappings for Colemak layout
@@ -67,9 +67,10 @@ navigation and restored displaced commands for Colemak layout users.
 Zed editor Colemak keybinding configuration with Helix-mode emulation. Includes
 normal and select mode bindings for Colemak layout.
 
-### `modules/neovim-colemak.nix`
+### `modules/neovim.nix`
 
-Neovim editor Colemak keybinding configuration. Implements the NEUI cluster navigation and restored displaced commands for Colemak layout users.
+Neovim editor Colemak keybinding configuration. Implements the NEUI cluster
+navigation and restored displaced commands for Colemak layout users.
 
 ## Usage
 
