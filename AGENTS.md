@@ -1,15 +1,36 @@
 # colemak
 
-Nix modules for Colemak keyboard layout (NEUI cluster optimization).
+Nix modules for Colemak keyboard layout configurations, migrated from the shikanime dotfiles. Optimizes modal editor keybindings for the ergonomic NEUI cluster on the home row.
 
 **Language:** Nix
 
-**Structure:** `modules/{helix,zed-editor,neovim}.nix` — editor configs; `flake.nix` — exposes all
+## Structure
 
-**Commit style:** Plain-text capitalized title, no prefix. Body with labels: `Design:`, `Related:`, `Closes #`.
+- `modules/helix.nix` — Helix editor Colemak configuration
+- `modules/zed-editor.nix` — Zed editor Helix-mode emulation
+- `modules/neovim.nix` — Neovim Colemak configuration
+- `flake.nix` — Nix flake exposing all modules
 
-**Stack:** 1 commit == 1 PR via ghstack. Amend + `ghstack` to resubmit. `ghstack land` on head PR to land stack. Never `gh pr merge`. Never force-push.
+## Commit Style
 
-**Protect `main`:** 1 review, linear history, signed commits, squash+rebase only.
+- Plain-text capitalized title, no conventional-commit prefix
+- Body with labels: `Design:`, `Related:`, `Closes #`
+- Keep Markdown lines wrapped at 80 columns and run `nix fmt` before shipping
 
-*Apache-2.0. Maintain cross-platform parity*
+## Stack
+
+- 1 commit == 1 PR via ghstack
+- Amend + `ghstack` to resubmit
+- `ghstack land` on head PR to land the entire stack
+- Never `gh pr merge` (creates poisoned commits)
+- Never force-push ghstack branches
+- ghstack only works on HEAD commit chains, not detached HEADs
+
+## Protect `main`
+
+- Require 1 approving review
+- Require linear history (no merge commits)
+- Require signed commits
+- Squash+rebase merge only
+
+*Licensed under Apache-2.0. Maintain cross-platform parity when adding new keybindings*
