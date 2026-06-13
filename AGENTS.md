@@ -1,4 +1,4 @@
-# colemak
+# Colemak
 
 Nix modules for Colemak keyboard layout configurations, migrated from the shikanime dotfiles. Optimizes modal editor keybindings for the ergonomic NEUI cluster on the home row.
 
