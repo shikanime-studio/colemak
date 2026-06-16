@@ -1,6 +1,8 @@
 # Colemak
 
-Nix modules for Colemak keyboard layout configurations, migrated from the shikanime dotfiles. Optimizes modal editor keybindings for the ergonomic NEUI cluster on the home row.
+Nix modules for Colemak keyboard layout configurations, migrated from the
+Shikanime dotfiles. Optimizes modal editor keybindings for the ergonomic NEUI
+cluster on the home row.
 
 **Language:** Nix
 
@@ -10,6 +12,11 @@ Nix modules for Colemak keyboard layout configurations, migrated from the shikan
 - `modules/zed-editor.nix` — Zed editor Helix-mode emulation
 - `modules/neovim.nix` — Neovim Colemak configuration
 - `flake.nix` — Nix flake exposing all modules
+
+## Layout
+
+Optimized for the ergonomic NEUI cluster on the home row. Maintains consistency
+across Helix, Zed (Helix mode), and Neovim.
 
 ## Commit Style
 
@@ -33,4 +40,5 @@ Nix modules for Colemak keyboard layout configurations, migrated from the shikan
 - Require signed commits
 - Squash+rebase merge only
 
-*Licensed under Apache-2.0. Maintain cross-platform parity when adding new keybindings*
+*Licensed under Apache-2.0. Maintain cross-platform parity when adding new
+keybindings. Always use worktrees when making changes.*
