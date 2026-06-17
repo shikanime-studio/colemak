@@ -39,7 +39,7 @@ across Helix, Zed (Helix mode), and Neovim.
 - Never force-push ghstack branches
 
 
- `main`
+## Protect `main`
 
 - Require 1 approving review
 - Require linear history (no merge commits)
